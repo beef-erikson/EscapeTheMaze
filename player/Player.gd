@@ -6,6 +6,11 @@ signal grabbed_key
 signal win
 
 
+
+func _ready():
+	$Sprite.scale = Vector2(1, 1)
+
+
 # Executes the move function based on key press and if the character is able to move
 func _process(delta):
 	if can_move:

@@ -1,5 +1,7 @@
 extends Area2D
 
+signal coin_pickup
+
 var textures = {'coin': 'res://assets/coin.png',
 				'key_red': 'res://assets/keyRed.png',
 				'star': 'res://assets/star.png'}
@@ -25,8 +27,11 @@ func init(_type, pos):
 	position = pos
 
 
-# Item picked up - disabled collision and starts tween
+# Item picked up - adds 1 to score through emit, disabled collision, and starts tween
 func pickup():
+	match type:
+		'coin':
+			emit_signal('coin_pickup', 1)
 	$CollisionShape2D.disabled = true
 	$Tween.start()
 

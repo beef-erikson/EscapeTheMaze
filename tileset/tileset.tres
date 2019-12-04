@@ -8,37 +8,37 @@
 [ext_resource path="res://assets/keyRed.png" type="Texture" id=6]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
-points = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
+points = PoolVector2Array( 32, -32, 32, 32, -32, 32, -32, -32 )
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
-points = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
+points = PoolVector2Array( 32, -32, 32, 32, -32, 32, -32, -32 )
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
-points = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
+points = PoolVector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [sub_resource type="ConvexPolygonShape2D" id=4]
-points = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
+points = PoolVector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [sub_resource type="ConvexPolygonShape2D" id=5]
-points = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
+points = PoolVector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [sub_resource type="ConvexPolygonShape2D" id=6]
-points = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
+points = PoolVector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [sub_resource type="ConvexPolygonShape2D" id=7]
-points = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
+points = PoolVector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [sub_resource type="ConvexPolygonShape2D" id=8]
-points = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
+points = PoolVector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [sub_resource type="ConvexPolygonShape2D" id=9]
-points = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
+points = PoolVector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [sub_resource type="ConvexPolygonShape2D" id=10]
-points = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
+points = PoolVector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [sub_resource type="ConvexPolygonShape2D" id=11]
-points = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
+points = PoolVector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [resource]
 0/name = "crate_brown"
@@ -54,7 +54,7 @@ points = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
 "one_way": false,
 "one_way_margin": 1.0,
 "shape": SubResource( 1 ),
-"shape_transform": Transform2D( 3.2, 0, 0, 3.2, 32, 32 )
+"shape_transform": Transform2D( 1, 0, 0, 1, 32, 32 )
 } ]
 0/z_index = 0
 1/name = "crate_red"
@@ -70,7 +70,7 @@ points = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
 "one_way": false,
 "one_way_margin": 1.0,
 "shape": SubResource( 2 ),
-"shape_transform": Transform2D( 3.2, 0, 0, 3.2, 32, 32 )
+"shape_transform": Transform2D( 1, 0, 0, 1, 32, 32 )
 } ]
 1/z_index = 0
 2/name = "crate_blue"
@@ -86,7 +86,7 @@ points = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
 "one_way": false,
 "one_way_margin": 1.0,
 "shape": SubResource( 5 ),
-"shape_transform": Transform2D( 3.2, 0, 0, 3.2, 32, 32 )
+"shape_transform": Transform2D( 1, 0, 0, 1, 32, 32 )
 } ]
 2/z_index = 0
 3/name = "crate_green"
@@ -102,7 +102,7 @@ points = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
 "one_way": false,
 "one_way_margin": 1.0,
 "shape": SubResource( 6 ),
-"shape_transform": Transform2D( 3.2, 0, 0, 3.2, 32, 32 )
+"shape_transform": Transform2D( 1, 0, 0, 1, 32, 32 )
 } ]
 3/z_index = 0
 4/name = "crate_gray"
@@ -118,7 +118,7 @@ points = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
 "one_way": false,
 "one_way_margin": 1.0,
 "shape": SubResource( 7 ),
-"shape_transform": Transform2D( 3.2, 0, 0, 3.2, 32, 32 )
+"shape_transform": Transform2D( 1, 0, 0, 1, 32, 32 )
 } ]
 4/z_index = 0
 5/name = "wall_red"
@@ -134,7 +134,7 @@ points = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
 "one_way": false,
 "one_way_margin": 1.0,
 "shape": SubResource( 8 ),
-"shape_transform": Transform2D( 3.2, 0, 0, 3.2, 32, 32 )
+"shape_transform": Transform2D( 1, 0, 0, 1, 32, 32 )
 } ]
 5/z_index = 0
 6/name = "wall_brick"
@@ -150,7 +150,7 @@ points = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
 "one_way": false,
 "one_way_margin": 1.0,
 "shape": SubResource( 9 ),
-"shape_transform": Transform2D( 3.2, 0, 0, 3.2, 32, 32 )
+"shape_transform": Transform2D( 1, 0, 0, 1, 32, 32 )
 } ]
 6/z_index = 0
 7/name = "wall_gray"
@@ -166,7 +166,7 @@ points = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
 "one_way": false,
 "one_way_margin": 1.0,
 "shape": SubResource( 10 ),
-"shape_transform": Transform2D( 3.2, 0, 0, 3.2, 32, 32 )
+"shape_transform": Transform2D( 1, 0, 0, 1, 32, 32 )
 } ]
 7/z_index = 0
 8/name = "wall_brown"
@@ -182,7 +182,7 @@ points = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
 "one_way": false,
 "one_way_margin": 1.0,
 "shape": SubResource( 11 ),
-"shape_transform": Transform2D( 3.2, 0, 0, 3.2, 32, 32 )
+"shape_transform": Transform2D( 1, 0, 0, 1, 32, 32 )
 } ]
 8/z_index = 0
 9/name = "ground_brown"
@@ -268,7 +268,7 @@ points = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
 "one_way": false,
 "one_way_margin": 1.0,
 "shape": SubResource( 3 ),
-"shape_transform": Transform2D( 3.2, 0, 0, 3.2, 32, 32 )
+"shape_transform": Transform2D( 1, 0, 0, 1, 32, 32 )
 } ]
 16/z_index = 0
 17/name = "door_red"
@@ -284,7 +284,7 @@ points = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
 "one_way": false,
 "one_way_margin": 1.0,
 "shape": SubResource( 4 ),
-"shape_transform": Transform2D( 3.2, 0, 0, 3.2, 32, 32 )
+"shape_transform": Transform2D( 1, 0, 0, 1, 32, 32 )
 } ]
 17/z_index = 0
 18/name = "key_green"

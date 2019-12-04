@@ -8,95 +8,65 @@
 [ext_resource path="res://assets/keyRed.png" type="Texture" id=6]
 
 [node name="TileSetMaker" type="Node2D"]
+position = Vector2( 0, 32 )
 
 [node name="crate_brown" type="Sprite" parent="."]
-editor/display_folded = true
-position = Vector2( 32, 32 )
+position = Vector2( 32, 0 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 64, 0, 64, 64 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="StaticBody2D" type="StaticBody2D" parent="crate_brown"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="crate_brown/StaticBody2D"]
-position = Vector2( -1.90735e-006, 1.90735e-006 )
-scale = Vector2( 3.2, 3.2 )
-polygon = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
+polygon = PoolVector2Array( 32, -32, 32, 32, -32, 32, -32, -32 )
 
 [node name="crate_red" type="Sprite" parent="."]
-editor/display_folded = true
-position = Vector2( 160, 32 )
+position = Vector2( 160, 0 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 448, 0, 64, 64 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="StaticBody2D" type="StaticBody2D" parent="crate_red"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="crate_red/StaticBody2D"]
-position = Vector2( -1.90735e-006, 1.90735e-006 )
-scale = Vector2( 3.2, 3.2 )
-polygon = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
+polygon = PoolVector2Array( 32, -32, 32, 32, -32, 32, -32, -32 )
 
 [node name="crate_blue" type="Sprite" parent="."]
-editor/display_folded = true
-position = Vector2( 288, 32 )
+position = Vector2( 288, 0 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 512, 0, 64, 64 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="StaticBody2D" type="StaticBody2D" parent="crate_blue"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="crate_blue/StaticBody2D"]
-position = Vector2( -1.90735e-006, 1.90735e-006 )
-scale = Vector2( 3.2, 3.2 )
-polygon = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
+polygon = PoolVector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [node name="crate_green" type="Sprite" parent="."]
-editor/display_folded = true
-position = Vector2( 416, 32 )
+position = Vector2( 416, 0 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 576, 0, 64, 64 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="StaticBody2D" type="StaticBody2D" parent="crate_green"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="crate_green/StaticBody2D"]
-position = Vector2( -1.90735e-006, 1.90735e-006 )
-scale = Vector2( 3.2, 3.2 )
-polygon = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
+polygon = PoolVector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [node name="crate_gray" type="Sprite" parent="."]
-editor/display_folded = true
-position = Vector2( 544, 32 )
+position = Vector2( 544, 0 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 640, 0, 64, 64 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="StaticBody2D" type="StaticBody2D" parent="crate_gray"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="crate_gray/StaticBody2D"]
-position = Vector2( -1.90735e-006, 1.90735e-006 )
-scale = Vector2( 3.2, 3.2 )
-polygon = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
+polygon = PoolVector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [node name="wall_red" type="Sprite" parent="."]
-editor/display_folded = true
-position = Vector2( 32, 160 )
+position = Vector2( 32, 128 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 384, 448, 64, 64 )
@@ -107,13 +77,10 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="wall_red"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall_red/StaticBody2D"]
-position = Vector2( -1.90735e-006, 1.90735e-006 )
-scale = Vector2( 3.2, 3.2 )
-polygon = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
+polygon = PoolVector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [node name="wall_brick" type="Sprite" parent="."]
-editor/display_folded = true
-position = Vector2( 160, 160 )
+position = Vector2( 160, 128 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 448, 448, 64, 64 )
@@ -124,13 +91,10 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="wall_brick"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall_brick/StaticBody2D"]
-position = Vector2( -1.90735e-006, 1.90735e-006 )
-scale = Vector2( 3.2, 3.2 )
-polygon = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
+polygon = PoolVector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [node name="wall_gray" type="Sprite" parent="."]
-editor/display_folded = true
-position = Vector2( 288, 160 )
+position = Vector2( 288, 128 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 512, 448, 64, 64 )
@@ -141,13 +105,10 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="wall_gray"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall_gray/StaticBody2D"]
-position = Vector2( -1.90735e-006, 1.90735e-006 )
-scale = Vector2( 3.2, 3.2 )
-polygon = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
+polygon = PoolVector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [node name="wall_brown" type="Sprite" parent="."]
-editor/display_folded = true
-position = Vector2( 416, 160 )
+position = Vector2( 416, 128 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 576, 448, 64, 64 )
@@ -156,14 +117,14 @@ __meta__ = {
 }
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall_brown"]
+collision_layer = 3
+collision_mask = 3
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall_brown/StaticBody2D"]
-position = Vector2( -1.90735e-006, 1.90735e-006 )
-scale = Vector2( 3.2, 3.2 )
-polygon = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
+polygon = PoolVector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [node name="ground_brown" type="Sprite" parent="."]
-position = Vector2( 32, 288 )
+position = Vector2( 32, 256 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 768, 384, 64, 64 )
@@ -172,7 +133,7 @@ __meta__ = {
 }
 
 [node name="ground_gray" type="Sprite" parent="."]
-position = Vector2( 160, 288 )
+position = Vector2( 160, 256 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 704, 384, 64, 64 )
@@ -181,7 +142,7 @@ __meta__ = {
 }
 
 [node name="ground_green" type="Sprite" parent="."]
-position = Vector2( 288, 288 )
+position = Vector2( 288, 256 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 640, 384, 64, 64 )
@@ -190,7 +151,7 @@ __meta__ = {
 }
 
 [node name="slime_spawn" type="Sprite" parent="."]
-position = Vector2( 32, 416 )
+position = Vector2( 32, 384 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 704, 256, 64, 64 )
@@ -199,7 +160,7 @@ __meta__ = {
 }
 
 [node name="player_spawn" type="Sprite" parent="."]
-position = Vector2( 160, 416 )
+position = Vector2( 160, 384 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 704, 128, 64, 64 )
@@ -208,7 +169,7 @@ __meta__ = {
 }
 
 [node name="coin" type="Sprite" parent="."]
-position = Vector2( 32, 544 )
+position = Vector2( 32, 512 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 576, 320, 64, 64 )
@@ -217,7 +178,7 @@ __meta__ = {
 }
 
 [node name="star" type="Sprite" parent="."]
-position = Vector2( 32, 672 )
+position = Vector2( 32, 640 )
 texture = ExtResource( 2 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 64, 64 )
@@ -226,8 +187,7 @@ __meta__ = {
 }
 
 [node name="door_green" type="Sprite" parent="."]
-editor/display_folded = true
-position = Vector2( 160, 544 )
+position = Vector2( 160, 512 )
 texture = ExtResource( 3 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 64, 64 )
@@ -238,13 +198,10 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="door_green"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="door_green/StaticBody2D"]
-position = Vector2( -1.90735e-006, 1.90735e-006 )
-scale = Vector2( 3.2, 3.2 )
-polygon = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
+polygon = PoolVector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [node name="door_red" type="Sprite" parent="."]
-editor/display_folded = true
-position = Vector2( 288, 544 )
+position = Vector2( 288, 512 )
 texture = ExtResource( 4 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 64, 64 )
@@ -255,14 +212,12 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="door_red"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="door_red/StaticBody2D"]
-position = Vector2( -1.90735e-006, 1.90735e-006 )
-scale = Vector2( 3.2, 3.2 )
-polygon = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
+polygon = PoolVector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [node name="key_green" type="Sprite" parent="."]
-position = Vector2( 145.5, 674 )
+position = Vector2( 160, 659 )
 texture = ExtResource( 5 )
 
 [node name="key_red" type="Sprite" parent="."]
-position = Vector2( 285, 674 )
+position = Vector2( 288, 659 )
 texture = ExtResource( 6 )
