@@ -27,11 +27,15 @@ func init(_type, pos):
 	position = pos
 
 
-# Item picked up - adds 1 to score through emit, disabled collision, and starts tween
+# Item picked up - adds 1 to score through emit when coin, disabled collision, and starts tween
 func pickup():
 	match type:
 		'coin':
 			emit_signal('coin_pickup', 1)
+			$CoinPickup.play()
+		'key_red':
+			$KeyPickup.play()
+
 	$CollisionShape2D.disabled = true
 	$Tween.start()
 

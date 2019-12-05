@@ -42,7 +42,7 @@ func move(dir):
 	# Moves a full tile and uses a sine transition for a smooth movement speed
 	$MoveTween.interpolate_property(self, "position", position,
 				position + moves[facing] * tile_size,
-				1.0 / speed, Tween.TRANS_SINE, Tween.EASE_IN_OUT)
+				1.0 / speed, Tween.TRANS_CUBIC, Tween.EASE_IN_OUT)
 	$MoveTween.start()
 	return true
 
